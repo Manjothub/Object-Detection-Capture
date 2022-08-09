@@ -1,13 +1,127 @@
-body {
+*{
+  box-sizing: border-box;
+}
+
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+.mainContent {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.imageHolder {
+  width: 60%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.imageHolder img {
+  width: 100%;
+}
+
+.resultsHolder {
+  padding: 0px 15px;
+  flex: 0 0 auto;
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.result {
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.best-result {
+  background: #000;
+  color: #fff;
+}
+span.name {
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+span.confidence {
+  font-size: 15px;
+}
+
+.recentImages {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+}
+
+.recentPrediction {
+  width: 20%;
+  flex: 0 0 auto;
+  cursor: grabbing;
+  margin-bottom: 30px;
+  padding: 0px 15px;
+}
+
+.recentPrediction img {
+  width: 100%;
+  height: 100%;
+}
+.recentPredictions {
+  background: #d09eff;
+}
+.recentPredictions h2 {
+  text-align: center;
+  padding: 20px 0;
+  color: #000;
+  font-size: 35px;
+}
+
+button.button {
+  background: #8a2be2;
+  color: #fff;
+  border: 0;
+  padding: 20px 30px;
+  width: 195px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button.uploadImage {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px;
+}
+span.or {
+  margin-right: 20px;
+}
+.inputHolder input[type="text"] {
+  height: 41px;
+  border-radius: 0 !important;
+  border: 1px solid;
+  width: 30%;
+  padding: 13px 10px;
+}
+
+h1.header {
+  margin: 0 0 30px;
+  text-align: center;
+  padding: 20px;
+  background: #892be2;
+  color: #fff;
 }
